@@ -61,5 +61,10 @@ public class Glowsalon {
         int[] quantities = {2, 2, 1, 2};
     }
     
-
+    public static String getDiscountMessage(int index, int quantity) {
+        if (index == 0 && quantity >= 3) return "5% discount applied";
+        if (index == 2 && quantity >= 2) return "UGX 3,000 discount applied";
+        if (index == 3 && quantity >= 2) return "10% discount applied";
+        return "no discount";
+    }
 }
